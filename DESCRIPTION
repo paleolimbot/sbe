@@ -22,3 +22,5 @@ Imports:
     fs
 Suggests: 
     testthat
+URL: https://github.com/paleolimbot/sbe
+BugReports: https://github.com/paleolimbot/sbe/issues
