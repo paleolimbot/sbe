@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Align_CTD >
+  <Version value="7.26.7.129" />
+  <ServerName value="Align CTD" />
+  <InputDir value="C:\Users\dunningtond\Documents\rproj\COR2019001\COR2019001\data\SBE_dd_02_wildedit" />
+  <InputFileArray size="0" GrowBy="-1" />
+  <OutputDir value="C:\Users\dunningtond\Documents\rproj\COR2019001\COR2019001\data\SBE_dd_02_wildedit" />
+  <NameAppend value="" />
+  <OutputFile value="" />
+  <LastProcessed value="0" />
+  <CalcArray Size="0" />
+</Align_CTD>

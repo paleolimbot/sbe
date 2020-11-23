@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cell_Thermal_Mass >
+  <Version value="7.26.7.129" />
+  <ServerName value="Cell Thermal Mass" />
+  <InputDir value="C:\Users\dunningtond\Documents\rproj\COR2019001\COR2019001\data\SBE_dd_03_filter" />
+  <InputFileArray size="0" GrowBy="-1" />
+  <OutputDir value="C:\Users\dunningtond\Documents\rproj\COR2019001\COR2019001\data\SBE_dd_03_filter" />
+  <NameAppend value="" />
+  <OutputFile value="" />
+  <LastProcessed value="0" />
+  <Primary >
+    <Correct value="1" />
+    <TempSensor value="0" />
+    <TA_Amplitude value="0.030000" />
+    <TA_TimeConstant value="7.000000" />
+  </Primary>
+  <Secondary >
+    <Correct value="1" />
+    <TempSensor value="1" />
+    <TA_Amplitude value="0.030000" />
+    <TA_TimeConstant value="7.000000" />
+  </Secondary>
+</Cell_Thermal_Mass>

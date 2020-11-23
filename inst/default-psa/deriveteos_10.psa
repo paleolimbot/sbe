@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Derive_TEOS_10 >
+  <Version value="7.26.7.129" />
+  <ServerName value="Derive TEOS-10" />
+  <InputDir value="C:\Users\dunningtond\Documents\rproj\COR2019001\COR2019001\data\SBE_dd_06_loopedit" />
+  <InputFileArray size="0" GrowBy="-1" />
+  <OutputDir value="C:\Users\dunningtond\Documents\rproj\COR2019001\COR2019001\data\SBE_dd_06_loopedit" />
+  <NameAppend value="" />
+  <OutputFile value="" />
+  <LastProcessed value="0" />
+  <CalcArray Size="0" />
+  <!-- -1 = Other -->
+  <!-- 4 = SBE 21 Seacat Thermosalinograph -->
+  <!-- 6 = SBE 45 Micro TSG Thermosalinograph -->
+  <InstrumentType>-1</InstrumentType>
+  <!--  0 = values entered. -->
+  <!--  1 = text file. -->
+  <!-- Not applicable if NMEA data is present. -->
+  <SourceForLatitudeLongitude>0</SourceForLatitudeLongitude>
+  <Latitude>0.00000e+000</Latitude>
+  <Longitude>0.00000e+000</Longitude>
+  <!--  0 = values entered. -->
+  <!--  1 = .xmlcon file -->
+  <!--  2 = text file. -->
+  <!-- Not applicable if pressure column is present or instrument is a thermosalinograph -->
+  <SourceForMooredPressure>0</SourceForMooredPressure>
+  <MooredPressure>0.00000e+000</MooredPressure>
+</Derive_TEOS_10>

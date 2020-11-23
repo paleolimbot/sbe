@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wild_Edit >
+  <Version value="7.26.7.129" />
+  <ServerName value="Wild Edit" />
+  <InputDir value="C:\Users\dunningtond\Documents\rproj\COR2019001\COR2019001\data\SBE_dd_01_cnv" />
+  <InputFileArray size="0" GrowBy="-1" />
+  <OutputDir value="C:\Users\dunningtond\Documents\rproj\COR2019001\COR2019001\data\SBE_dd_01_cnv" />
+  <NameAppend value="" />
+  <OutputFile value="" />
+  <LastProcessed value="0" />
+  <StdDevPassOne value="2.000000" />
+  <StdDevPassTwo value="20.000000" />
+  <ScansPerBlock value="100" />
+  <MinDelta value="0.000000" />
+  <ExcludeMarkedBad value="1" />
+  <CalcArray Size="0" />
+</Wild_Edit>
