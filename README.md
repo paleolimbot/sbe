@@ -12,7 +12,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 <!-- badges: end -->
 
 The goal of sbe is to provide an R interface to ‘Seabird’ files and
-programs.
+programs. This package is totally unofficial and very experimental.
 
 ## Installation
 

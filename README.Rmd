@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of sbe is to provide an R interface to 'Seabird' files and programs.
+The goal of sbe is to provide an R interface to 'Seabird' files and programs. This package is totally unofficial and very experimental.
 
 ## Installation
 

@@ -19,7 +19,8 @@ Imports:
     rlang,
     glue,
     processx,
-    fs
+    fs,
+    stringr
 Suggests: 
     testthat
 URL: https://github.com/paleolimbot/sbe
