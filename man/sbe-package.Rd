@@ -10,6 +10,14 @@ Provides facilities to process and convert 'Seabird'
   .hex, .dat, .xmlcon, .con files. An interface to the SBEBatch.exe
   batch processor is also provided.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/paleolimbot/sbe}
+  \item Report bugs at \url{https://github.com/paleolimbot/sbe/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Dewey Dunnington \email{dewey.dunnington@dfo-mpo.gc.ca} (\href{https://orcid.org/0000-0002-9415-4582}{ORCID})
 

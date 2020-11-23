@@ -7,7 +7,11 @@
 #'   to convert file paths that are valid in R to file paths that are valid
 #'   for SBEBatch.
 #' @param quiet Use `TRUE` to suppress non-error output.
+#' @param reconfigure Use `TRUE` to force automatic detection of SBEBatch.exe
+#' @param drive By default this is detected from the location of the R
+#'   executable; pass an explicit value if this configuration fails.
 #' @param timeout See [processx::run()].
+#' @param path A valid path in R.
 #'
 #' @export
 #'
@@ -28,13 +32,13 @@ sbe_run_batch <- function(batch_file, ..., quiet = FALSE, timeout = Inf) {
 
 #' @rdname sbe_run_batch
 #' @export
-sbe_batch_path <- function(x) {
-  x <- gsub("/", "\\\\", fs::path_abs(x))
+sbe_batch_path <- function(path) {
+  path <- gsub("/", "\\\\", fs::path_abs(path))
 
-  has_space <- grepl(" ", x)
+  has_space <- grepl(" ", path)
   if (any(has_space)) {
     files <- if (sum(has_space) != 1) "files" else "file"
-    file_lab <- paste0("'", x[has_space], "'", collapse = "\n")
+    file_lab <- paste0("'", path[has_space], "'", collapse = "\n")
     abort(
       glue(
         paste0(
@@ -45,7 +49,7 @@ sbe_batch_path <- function(x) {
     )
   }
 
-  as.character(x)
+  as.character(path)
 }
 
 #' @rdname sbe_run_batch

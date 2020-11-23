@@ -9,7 +9,7 @@
 \usage{
 sbe_run_batch(batch_file, ..., quiet = FALSE, timeout = Inf)
 
-sbe_batch_path(x)
+sbe_batch_path(path)
 
 has_sbe_batch()
 
@@ -26,6 +26,13 @@ for SBEBatch.}
 \item{quiet}{Use \code{TRUE} to suppress non-error output.}
 
 \item{timeout}{See \code{\link[processx:run]{processx::run()}}.}
+
+\item{path}{A valid path in R.}
+
+\item{reconfigure}{Use \code{TRUE} to force automatic detection of SBEBatch.exe}
+
+\item{drive}{By default this is detected from the location of the R
+executable; pass an explicit value if this configuration fails.}
 }
 \description{
 Run SBEBatch.exe
