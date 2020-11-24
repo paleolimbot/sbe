@@ -35,14 +35,14 @@ to select multiple files.}
 
 \item{con}{A vector of .con or .xmlcon files, recycled along \code{input}.}
 
-\item{output}{An output file or directory, defaulting to \code{\link[=sbe_temp_dir]{sbe_temp_dir()}}}
+\item{output}{An output directory, defaulting to \code{\link[=sbe_temp_dir]{sbe_temp_dir()}}.}
 
 \item{quiet}{Use \code{TRUE} to suppress non-error output.}
 
 \item{path}{A valid path in R.}
 }
 \value{
-A reference to \code{output_dir}.
+The \code{output} directory.
 }
 \description{
 These functions generate suitable batch file specifications and run them

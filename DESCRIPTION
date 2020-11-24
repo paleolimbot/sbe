@@ -20,7 +20,9 @@ Imports:
     glue,
     processx,
     fs,
-    stringr
+    stringr,
+    readr,
+    tibble
 Suggests: 
     testthat
 URL: https://github.com/paleolimbot/sbe

@@ -12,12 +12,12 @@
 #' @param input A vector of input files. This can include the wildcard `*`
 #'   to select multiple files.
 #' @param con A vector of .con or .xmlcon files, recycled along `input`.
-#' @param output An output file or directory, defaulting to [sbe_temp_dir()]
+#' @param output An output directory, defaulting to [sbe_temp_dir()].
 #' @inheritParams sbe_run_batch
 #'
 #' @rdname sbe_run
 #'
-#' @return A reference to `output_dir`.
+#' @return The `output` directory.
 #' @export
 #'
 sbe_run_tool <- function(tool, psa, input = NULL, con = NULL, output = sbe_temp_dir(), quiet = FALSE) {
@@ -30,6 +30,8 @@ sbe_run_tool <- function(tool, psa, input = NULL, con = NULL, output = sbe_temp_
   write(batch_txt, batch_file)
 
   sbe_run_batch(batch_file, quiet = quiet)
+
+  output
 }
 
 sbe_batch_generate <- function(tool, psa, input = NULL, con = NULL, output = NULL) {

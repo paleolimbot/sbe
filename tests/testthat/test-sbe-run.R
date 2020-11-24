@@ -57,3 +57,19 @@ test_that("sbe_temp_dir() works", {
   expect_true(dir.exists(temp_dir))
   unlink(temp_dir, recursive = TRUE)
 })
+
+test_that("sbe_run_tool() works on real data", {
+  skip("Don't run batch processor automatically")
+  faroe_dir <- system.file("extdata/faroe", package = "sbe")
+
+  out_dir <- sbe_run_tool(
+    "datcnv",
+    psa = file.path(faroe_dir, "faroe.psa"),
+    input = file.path(faroe_dir, "faroe.dat"),
+    con = file.path(faroe_dir, "faroe.con")
+  )
+
+  out_cnv <- list.files(out_dir, full.names = TRUE)
+  expect_identical(basename(out_cnv), "Faroe.cnv")
+  unlink(out_dir, recursive = TRUE)
+})
