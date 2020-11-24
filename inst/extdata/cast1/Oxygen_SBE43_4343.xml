@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OxygenSensor SensorID="38" SB_ConfigCTD_FileVersion="7.23.0.2" >
+  <SerialNumber>4343</SerialNumber>
+  <CalibrationDate>24-Sep-19</CalibrationDate>
+  <Use2007Equation>1</Use2007Equation>
+  <CalibrationCoefficients equation="0" >
+    <!-- Coefficients for Owens-Millard equation. -->
+    <Boc>0.0000</Boc>
+    <Soc>0.0000e+000</Soc>
+    <offset>0.0000</offset>
+    <Pcor>0.00e+000</Pcor>
+    <Tcor>0.0000</Tcor>
+    <Tau>0.0</Tau>
+  </CalibrationCoefficients>
+  <CalibrationCoefficients equation="1" >
+    <!-- Coefficients for Sea-Bird equation - SBE calibration in 2007 and later. -->
+    <Soc>3.6670e-001</Soc>
+    <offset>-0.6928</offset>
+    <A>-3.0841e-003</A>
+    <B> 1.1549e-004</B>
+    <C>-1.9644e-006</C>
+    <D0> 2.5826e+000</D0>
+    <D1> 1.92634e-004</D1>
+    <D2>-4.64803e-002</D2>
+    <E> 3.6000e-002</E>
+    <Tau20> 2.0300</Tau20>
+    <H1>-3.3000e-002</H1>
+    <H2> 5.0000e+003</H2>
+    <H3> 1.4500e+003</H3>
+  </CalibrationCoefficients>
+</OxygenSensor>

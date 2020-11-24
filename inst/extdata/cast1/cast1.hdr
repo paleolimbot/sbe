@@ -1,0 +1,17 @@
+* Sea-Bird SBE 19plus V2 Data File:
+* FileName = Cast1.hdr
+* Software Version Seasave V 7.26.7.121
+* Temperature SN = 0001
+* Conductivity SN = 0001
+* Append System Time to Every Scan
+* System UpLoad Time = Jun 04 2020 06:51:13
+* NMEA Latitude = 66 37.82718 S
+* NMEA Longitude = 063 19.93296 E
+* NMEA UTC (Time) = Jun 04 2020 06:50:05
+* Store Lat/Lon Data = Append to Every Scan
+** Ship: SBS University
+** Station: Unit 1
+** Operator: Natalie Zielinski
+* Real-Time Sample Interval = 0.2500 seconds
+* System UTC = Jun 04 2020 06:51:13
+*END*

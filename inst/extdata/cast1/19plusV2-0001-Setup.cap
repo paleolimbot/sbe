@@ -1,0 +1,45 @@
+S>ds
+SBE 19plus V 3.1.8  SERIAL NO. 0001    27 May 2020 09:00:22
+vbatt = 13.2, vlith =  8.4, ioper =  62.1 ma, ipump =  78.0 ma, 
+iext01 =   4.8 ma, iext2345 =  26.2 ma
+status = not logging
+number of scans to average = 40
+samples = 0, free = 3870479, casts = 0
+mode = profile, minimum cond freq = 3000, pump delay = 10 sec
+autorun = no, ignore magnetic switch = yes
+battery type = alkaline, battery cutoff =  7.5 volts
+pressure sensor = strain gauge, range = 10153.0
+SBE 38 = no, WETLABS = no, OPTODE = no, SBE63 = no, SeaFET = no, Gas Tension Device = no
+Ext Volt 0 = no, Ext Volt 1 = no
+Ext Volt 2 = no, Ext Volt 3 = no
+Ext Volt 4 = no, Ext Volt 5 = no
+echo characters = yes
+output format = converted decimal
+output salinity = no, output sound velocity = no
+S>mincondfreq=3338.23
+S>pumpdelay=60
+S>sampleinterval=1
+S>volt0=yes
+S>volt2=yes
+S>volt3=yes
+S>volt4=yes
+S>outputformat=0
+S>ds
+SBE 19plus V 3.1.8  SERIAL NO. 0001    27 May 2020 09:10:28
+vbatt = 13.2, vlith =  8.4, ioper =  62.1 ma, ipump =  78.0 ma, 
+iext01 =   4.8 ma, iext2345 =  26.2 ma
+status = not logging
+number of scans to average = 1
+samples = 0, free = 3870479, casts = 0
+mode = profile, minimum cond freq = 3338.23, pump delay = 60 sec
+autorun = no, ignore magnetic switch = yes
+battery type = alkaline, battery cutoff =  7.5 volts
+pressure sensor = strain gauge, range = 10153.0
+SBE 38 = no, WETLABS = no, OPTODE = no, SBE63 = no, SeaFET = no, Gas Tension Device = no
+Ext Volt 0 = yes, Ext Volt 1 = no
+Ext Volt 2 = yes, Ext Volt 3 = yes
+Ext Volt 4 = yes, Ext Volt 5 = no
+echo characters = yes
+output format = raw HEX
+output salinity = no, output sound velocity = no
+

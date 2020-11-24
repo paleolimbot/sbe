@@ -71,7 +71,7 @@ sbe_batch_generate <- function(tool, psa, input = NULL, con = NULL, output = NUL
 #' @export
 sbe_psa_default <- function(tool) {
   tool <- tolower(tool)
-  default_psa_dir <- system.file("default-psa", package = "sbe")
+  default_psa_dir <- system.file("extdata/psa", package = "sbe")
   file.path(default_psa_dir, glue("{ tool }.psa"))
 }
 
