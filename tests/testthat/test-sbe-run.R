@@ -69,7 +69,7 @@ test_that("sbe_run_tool() works on real data", {
     con = file.path(faroe_dir, "faroe.con")
   )
 
-  out_cnv <- list.files(out_dir, full.names = TRUE)
-  expect_identical(basename(out_cnv), "Faroe.cnv")
+  out_sbe_cnv <- list.files(out_dir, full.names = TRUE)
+  expect_identical(basename(out_sbe_cnv), "Faroe.cnv")
   unlink(out_dir, recursive = TRUE)
 })

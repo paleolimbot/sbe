@@ -2,9 +2,9 @@
 
 export(has_sbe_batch)
 export(is_sbe_temp_dir)
-export(read_cnv)
-export(read_cnv_colmeta)
-export(read_cnv_header)
+export(read_sbe_cnv)
+export(read_sbe_cnv_colmeta)
+export(read_sbe_cnv_header)
 export(sbe_batch_configure)
 export(sbe_batch_path)
 export(sbe_psa_default)
