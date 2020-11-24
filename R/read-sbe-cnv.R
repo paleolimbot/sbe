@@ -7,7 +7,7 @@
 #'   this parameter is interpreted.
 #' @param skip Number of non-header rows to skip.
 #' @param n_max Maximum number of rows to read.
-#' @param header A previously read value obtained from [read_sbe_cnv_header()].
+#' @param header A previously read value obtained from [read_sbe_header()].
 #' @param n_header The starting guess for number of header lines.
 #'
 #' @export
@@ -16,13 +16,13 @@
 #' file <- system.file("extdata/faroe/faroe.cnv", package = "sbe")
 #' read_sbe_cnv(file)
 #' read_sbe_cnv_colmeta(file)
-#' head(read_sbe_cnv_header(file))
+#' head(read_sbe_header(file))
 #'
 #' # header information is kept on read with the 'header' attribute
 #' cnv <- read_sbe_cnv(file)
 #' head(attr(cnv, "header"))
 #'
-read_sbe_cnv <- function(file, skip = 0, n_max = Inf, header = read_sbe_cnv_header(file)) {
+read_sbe_cnv <- function(file, skip = 0, n_max = Inf, header = read_sbe_header(file)) {
   meta <- read_sbe_cnv_colmeta(file, header)
   tbl <- readr::read_fwf(
     file,
@@ -38,7 +38,7 @@ read_sbe_cnv <- function(file, skip = 0, n_max = Inf, header = read_sbe_cnv_head
 
 #' @rdname read_sbe_cnv
 #' @export
-read_sbe_cnv_colmeta <- function(file, header = read_sbe_cnv_header(file)) {
+read_sbe_cnv_colmeta <- function(file, header = read_sbe_header(file)) {
   header_names <- header[grepl("#\\s+name\\s+[0-9]+", header)]
   names_ext <- stringr::str_match(
     header_names,
@@ -59,7 +59,7 @@ read_sbe_cnv_colmeta <- function(file, header = read_sbe_cnv_header(file)) {
 
 #' @rdname read_sbe_cnv
 #' @export
-read_sbe_cnv_header <- function(file, n_header = 500) {
+read_sbe_header <- function(file, n_header = 500) {
   stopifnot(n_header > 0)
 
   lines <- readr::read_lines(file, n_max = n_header)
@@ -72,7 +72,7 @@ read_sbe_cnv_header <- function(file, n_header = 500) {
   }
 
   if (!any(end_header)) {
-    abort(glue("Can't find '*END*' of header in '{ file }'.\nIs this a '.cnv' file?"))
+    abort(glue("Can't find '*END*' of header in '{ file }'."))
   }
 
   lines[seq_len(which(end_header)[1] - 1)]

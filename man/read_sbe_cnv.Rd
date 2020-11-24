@@ -3,14 +3,14 @@
 \name{read_sbe_cnv}
 \alias{read_sbe_cnv}
 \alias{read_sbe_cnv_colmeta}
-\alias{read_sbe_cnv_header}
+\alias{read_sbe_header}
 \title{Read Seabird .cnv files}
 \usage{
-read_sbe_cnv(file, skip = 0, n_max = Inf, header = read_sbe_cnv_header(file))
+read_sbe_cnv(file, skip = 0, n_max = Inf, header = read_sbe_header(file))
 
-read_sbe_cnv_colmeta(file, header = read_sbe_cnv_header(file))
+read_sbe_cnv_colmeta(file, header = read_sbe_header(file))
 
-read_sbe_cnv_header(file, n_header = 500)
+read_sbe_header(file, n_header = 500)
 }
 \arguments{
 \item{file}{A file, URL, or connection. Files ending in .gz, .bz2, .xz, or
@@ -22,7 +22,7 @@ this parameter is interpreted.}
 
 \item{n_max}{Maximum number of rows to read.}
 
-\item{header}{A previously read value obtained from \code{\link[=read_sbe_cnv_header]{read_sbe_cnv_header()}}.}
+\item{header}{A previously read value obtained from \code{\link[=read_sbe_header]{read_sbe_header()}}.}
 
 \item{n_header}{The starting guess for number of header lines.}
 }
@@ -33,7 +33,7 @@ Read Seabird .cnv files
 file <- system.file("extdata/faroe/faroe.cnv", package = "sbe")
 read_sbe_cnv(file)
 read_sbe_cnv_colmeta(file)
-head(read_sbe_cnv_header(file))
+head(read_sbe_header(file))
 
 # header information is kept on read with the 'header' attribute
 cnv <- read_sbe_cnv(file)
