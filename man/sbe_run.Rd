@@ -48,3 +48,19 @@ The \code{output} directory.
 These functions generate suitable batch file specifications and run them
 using \code{\link[=sbe_run_batch]{sbe_run_batch()}}.
 }
+\examples{
+\dontrun{
+# only works if SeaSoft has been installed
+faroe_dir <- system.file("extdata/faroe", package = "sbe")
+out_dir <- sbe_run_tool(
+  "datcnv",
+  psa = file.path(faroe_dir, "faroe.psa"),
+  input = file.path(faroe_dir, "faroe.dat"),
+  con = file.path(faroe_dir, "faroe.con")
+)
+
+out_sbe_cnv <- list.files(out_dir, full.names = TRUE)
+read_sbe_cnv(out_sbe_cnv)
+}
+
+}

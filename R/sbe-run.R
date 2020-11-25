@@ -20,6 +20,21 @@
 #' @return The `output` directory.
 #' @export
 #'
+#' @examples
+#' \dontrun{
+#' # only works if SeaSoft has been installed
+#' faroe_dir <- system.file("extdata/faroe", package = "sbe")
+#' out_dir <- sbe_run_tool(
+#'   "datcnv",
+#'   psa = file.path(faroe_dir, "faroe.psa"),
+#'   input = file.path(faroe_dir, "faroe.dat"),
+#'   con = file.path(faroe_dir, "faroe.con")
+#' )
+#'
+#' out_sbe_cnv <- list.files(out_dir, full.names = TRUE)
+#' read_sbe_cnv(out_sbe_cnv)
+#' }
+#'
 sbe_run_tool <- function(tool, psa, input = NULL, con = NULL, output = sbe_temp_dir(), quiet = FALSE) {
   batch_txt <- sbe_batch_generate(tool, psa, input, con, output)
   if (!quiet) {
