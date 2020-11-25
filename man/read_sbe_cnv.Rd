@@ -40,7 +40,9 @@ widths of each field in characters. Defaults to 11.}
 \item{n_header}{The starting guess for number of header lines.}
 }
 \description{
-Read Seabird .cnv files
+The .cnv file format is the primary file format used for input and output
+to SBE Data Processing. The format is essentially a fixed-width format using
+11 characters for each column.
 }
 \examples{
 file <- system.file("extdata/faroe/faroe.cnv", package = "sbe")

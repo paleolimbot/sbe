@@ -1,6 +1,10 @@
 
 #' Read Seabird .cnv files
 #'
+#' The .cnv file format is the primary file format used for input and output
+#' to SBE Data Processing. The format is essentially a fixed-width format using
+#' 11 characters for each column.
+#'
 #' @param file A file, URL, or connection. Files ending in .gz, .bz2, .xz, or
 #'   .zip will be automatically uncompressed; URLs will be automatically
 #'   downloaded. See [readr::read_lines()] for a full description of how
