@@ -9,6 +9,10 @@
 #' @param n_max Maximum number of rows to read.
 #' @param header A previously read value obtained from [read_sbe_header()].
 #' @param n_header The starting guess for number of header lines.
+#' @param col_names The column names. Defaults to the `name` column of
+#'   [read_sbe_cnv_colmeta()].
+#' @param widths A vector the same length as `col_names` denoting the
+#'   widths of each field in characters. Defaults to 11.
 #'
 #' @export
 #'
@@ -22,11 +26,14 @@
 #' cnv <- read_sbe_cnv(file)
 #' head(attr(cnv, "header"))
 #'
-read_sbe_cnv <- function(file, skip = 0, n_max = Inf, header = read_sbe_header(file)) {
+read_sbe_cnv <- function(file, skip = 0, n_max = Inf,
+                         header = read_sbe_header(file),
+                         col_names = read_sbe_cnv_colmeta(file, header)$name,
+                         widths = rep(11L, length(col_names))) {
   meta <- read_sbe_cnv_colmeta(file, header)
   tbl <- readr::read_fwf(
     file,
-    col_positions = readr::fwf_widths(rep(11L, nrow(meta)), meta$name),
+    col_positions = readr::fwf_widths(widths, col_names),
     col_types = readr::cols(.default = readr::col_double()),
     skip = length(header) + 1 + skip,
     n_max = n_max

@@ -27,3 +27,5 @@ Suggests:
     testthat
 URL: https://github.com/paleolimbot/sbe
 BugReports: https://github.com/paleolimbot/sbe/issues
+Depends: 
+    R (>= 2.10)

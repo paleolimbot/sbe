@@ -6,7 +6,14 @@
 \alias{read_sbe_header}
 \title{Read Seabird .cnv files}
 \usage{
-read_sbe_cnv(file, skip = 0, n_max = Inf, header = read_sbe_header(file))
+read_sbe_cnv(
+  file,
+  skip = 0,
+  n_max = Inf,
+  header = read_sbe_header(file),
+  col_names = read_sbe_cnv_colmeta(file, header)$name,
+  widths = rep(11L, length(col_names))
+)
 
 read_sbe_cnv_colmeta(file, header = read_sbe_header(file))
 
@@ -23,6 +30,12 @@ this parameter is interpreted.}
 \item{n_max}{Maximum number of rows to read.}
 
 \item{header}{A previously read value obtained from \code{\link[=read_sbe_header]{read_sbe_header()}}.}
+
+\item{col_names}{The column names. Defaults to the \code{name} column of
+\code{\link[=read_sbe_cnv_colmeta]{read_sbe_cnv_colmeta()}}.}
+
+\item{widths}{A vector the same length as \code{col_names} denoting the
+widths of each field in characters. Defaults to 11.}
 
 \item{n_header}{The starting guess for number of header lines.}
 }
